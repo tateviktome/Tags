@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCollectionViewCell" customModule="Tags" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUY-Xh-YY6">
+                        <rect key="frame" x="0.0" y="0.0" width="299" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc3-Tp-qtI">
+                                <rect key="frame" x="20" y="8" width="259" height="114"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mc3-Tp-qtI" secondAttribute="trailing" constant="20" id="EhO-YZ-M2R"/>
+                            <constraint firstItem="Mc3-Tp-qtI" firstAttribute="top" secondItem="yUY-Xh-YY6" secondAttribute="top" constant="8" id="VvM-Vc-bOo"/>
+                            <constraint firstAttribute="bottom" secondItem="Mc3-Tp-qtI" secondAttribute="bottom" constant="8" id="dKb-1e-B11"/>
+                            <constraint firstItem="Mc3-Tp-qtI" firstAttribute="leading" secondItem="yUY-Xh-YY6" secondAttribute="leading" constant="20" id="gMH-9F-Kah"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yUY-Xh-YY6" secondAttribute="trailing" id="0TZ-WF-fyW"/>
+                <constraint firstItem="yUY-Xh-YY6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ibs-TU-aG4"/>
+                <constraint firstAttribute="bottom" secondItem="yUY-Xh-YY6" secondAttribute="bottom" id="bH3-1K-7bN"/>
+                <constraint firstItem="yUY-Xh-YY6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q3j-QU-Bds"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="299" height="130"/>
+            <connections>
+                <outlet property="backgroundVieww" destination="yUY-Xh-YY6" id="s6t-on-qt5"/>
+                <outlet property="titleLabel" destination="Mc3-Tp-qtI" id="TAI-Cp-JJm"/>
+            </connections>
+            <point key="canvasLocation" x="318.11594202898556" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
